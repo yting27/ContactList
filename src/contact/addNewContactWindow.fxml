@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="20.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="contact.NewContactController">
+
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+
+    <header>
+        <VBox spacing="12">
+            <Label alignment="CENTER" contentDisplay="TOP" text="Please enter new contact information" VBox.vgrow="ALWAYS">
+                <font>
+                    <Font size="20" />
+                </font>
+            </Label>
+            <Separator />
+        </VBox>
+    </header>
+
+    <content>
+        <GridPane alignment="CENTER_LEFT" hgap="10" vgap="10">
+            <Label text="First Name" wrapText="true" />
+            <TextField fx:id="firstName" GridPane.columnIndex="3" GridPane.columnSpan="50" />
+            <Label text="Last Name" wrapText="true" GridPane.rowIndex="1" />
+            <TextField fx:id="lastName" GridPane.columnIndex="3" GridPane.columnSpan="50" GridPane.rowIndex="1" />
+            <Label text="Phone Number" wrapText="true" GridPane.rowIndex="2" />
+            <TextField fx:id="phoneNum" GridPane.columnIndex="3" GridPane.columnSpan="50" GridPane.rowIndex="2" />
+            <Label text="Email" wrapText="true" GridPane.rowIndex="3" />
+            <TextField fx:id="email" GridPane.columnIndex="3" GridPane.columnSpan="50" GridPane.rowIndex="3" />
+            <Label text="Remarks" wrapText="true" GridPane.rowIndex="4" />
+            <TextField fx:id="remark" GridPane.columnIndex="3" GridPane.columnSpan="50" GridPane.rowIndex="4" />
+        </GridPane>
+    </content>
+
+</DialogPane>
